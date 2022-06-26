@@ -1,0 +1,7 @@
+/* pages/home/home.wxss */
+
+button{
+    margin: 10px;
+    background-color: pink;
+    color: white;
+}

@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<button bindtap="getInfo">GET Request</button>
+
+<button bindtap="postInfo">POST Request</button>

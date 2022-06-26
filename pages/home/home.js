@@ -1,51 +1,39 @@
-// pages/list/list.js
+// pages/home/home.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        info: 'hello world',
-        imgSrc: 'https://picsum.photos/200',
-        randomNum: Math.random() * 10,
-        randomNum2: Math.random().toFixed(2),
-        count: 0,
-        msg: 'hello',
-        type: 1,
-        flag: true,
-        arr1: [1, 2, 3, 4, 5],
-        userList: [{
-            id: 1,
-            name: 'redone'
-        }, {
-            id: 2,
-            name: 'greenone'
-        }, {
-            id: 3,
-            name: 'lgbtqa2+one'
-        }]
+
     },
 
-    btnTapHandler(e) {
-        console.log(e);
-    },
-
-    countChange() {
-        this.setData({
-            count: ++this.data.count
+    getInfo() {
+        wx.request({
+            url: 'https://www.escook.cn/api/get',
+            method: 'GET',
+            data: {
+                name: '25',
+                age: 20
+            },
+            success: (res) => {
+                console.log(res);
+            }
         })
     },
 
-    btnTap2(e) {
-        this.setData({
-            count: this.data.count + e.target.dataset.info
-        })
-    },
-
-    inputHandler(e) {
-        this.setData({
-            msg: e.detail.value
-        })
+    postInfo(){
+        wx.request({
+            url: 'https://www.escook.cn/api/get',
+            method: 'POST',
+            data:{
+                name: '1s',
+                age: 33
+            },
+            success: (res)=>{
+                console.log(res);
+            }
+          })
     },
 
     /**

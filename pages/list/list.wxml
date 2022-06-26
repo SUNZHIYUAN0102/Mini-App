@@ -5,7 +5,6 @@
 
 <input type="text" bindinput="inputHandler" value="{{msg}}" />
 
-
 <view wx:if="{{type===1}}">男</view>
 <view wx:elif="{{type===2}}">女</view>
 <view wx:else>保密</view>
@@ -17,4 +16,12 @@
 
 <view hidden="{{flag}}">
     meow
+</view>
+
+<view wx:for="{{arr1}}" wx:for-index="idx" wx:for-item="itemName">
+    索引: {{idx}}, item: {{itemName}}
+</view>
+
+<view class="username" wx:for="{{userList}}" wx:key="id">
+    {{item.name}}
 </view>
