@@ -1,2 +1,4 @@
 <!--pages/contact/contact.wxml-->
-<button bindtap="goToInfo">redirect info</button>
+<view class="num-item" wx:for="{{colorList}}" wx:key="index" style="background-color: rgba({{item}});">
+{{item}}
+</view>

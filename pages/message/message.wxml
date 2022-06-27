@@ -1,7 +1,8 @@
 <!--pages/message/message.wxml-->
 <navigator url="/pages/home/home" open-type="switchTab">meow</navigator>
 <navigator url="/pages/info/info" open-type="navigate">info</navigator>
-
-<navigator url="/pages/info/info?name=zs&age=20" open-type="navigate" >redirect to info</navigator>
-
+<navigator url="/pages/info/info?name=zs&age=20" open-type="navigate">redirect to info</navigator>
 <button bindtap="goToInfo">redirect info</button>
+
+<view style="height: 800px;">
+</view>
