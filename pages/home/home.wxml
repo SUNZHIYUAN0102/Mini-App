@@ -1,4 +1,19 @@
 <!--pages/home/home.wxml-->
-<button bindtap="getInfo">GET Request</button>
 
-<button bindtap="postInfo">POST Request</button>
+<swiper indicator-dots indicator-active-color="white" interval="3000" circular autoplay>
+    <swiper-item wx:for="{{swiperList}}" wx:key="id">
+        <image src="{{item.image}}"></image>
+    </swiper-item>
+</swiper>
+
+<view class="grid-list">
+    <view class="grid-item" wx:for="{{gridList}}" wx:key="id">
+        <image src="{{item.icon}}"></image>
+        <text>{{item.name}}</text>
+    </view>
+</view>
+
+<view class="img-box">
+    <image src="/pictures/anime-girl1.png" mode="widthFix"></image>
+    <image src="/pictures/anime-girl2.png" mode="widthFix"></image>
+</view>

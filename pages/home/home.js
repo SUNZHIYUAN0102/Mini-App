@@ -5,42 +5,40 @@ Page({
      * 页面的初始数据
      */
     data: {
-
-    },
-
-    getInfo() {
-        wx.request({
-            url: 'https://www.escook.cn/api/get',
-            method: 'GET',
-            data: {
-                name: '25',
-                age: 20
-            },
-            success: (res) => {
-                console.log(res);
-            }
-        })
-    },
-
-    postInfo(){
-        wx.request({
-            url: 'https://www.escook.cn/api/get',
-            method: 'POST',
-            data:{
-                name: '1s',
-                age: 33
-            },
-            success: (res)=>{
-                console.log(res);
-            }
-          })
+        swiperList: [],
+        gridList: []
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
+        this.getSwiperList()
+        this.getGridList()
+    },
 
+    getSwiperList() {
+        wx.request({
+            url: 'https://www.escook.cn/slides',
+            method: 'GET',
+            success: (res) => {
+                this.setData({
+                    swiperList: res.data
+                })
+            }
+        })
+    },
+
+    getGridList() {
+        wx.request({
+            url: 'https://www.escook.cn/categories',
+            method: 'GET',
+            success: (res) => {
+                this.setData({
+                    gridList: res.data
+                })
+            }
+        })
     },
 
     /**

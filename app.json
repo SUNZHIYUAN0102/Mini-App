@@ -3,16 +3,14 @@
         "pages/home/home",
         "pages/message/message",
         "pages/contact/contact",
-        "pages/list/list",
-        "pages/index/index",
-        "pages/logs/logs"
+        "pages/info/info"
     ],
     "window": {
         "backgroundTextStyle": "dark",
         "navigationBarBackgroundColor": "#2b4b6b",
-        "navigationBarTitleText": "LGBTQA2+",
+        "navigationBarTitleText": "本地生活",
         "navigationBarTextStyle": "white",
-        "enablePullDownRefresh": true,
+        "enablePullDownRefresh": false,
         "backgroundColor": "#efefef",
         "onReachBottomDistance": 50
     },
@@ -31,7 +29,7 @@
             },
             {
                 "pagePath": "pages/contact/contact",
-                "text": "联系",
+                "text": "联系我们",
                 "iconPath": "/pictures/stan-marsh.png",
                 "selectedIconPath": "/pictures/super-mario.png"
             }

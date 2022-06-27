@@ -1,58 +1,32 @@
-// pages/list/list.js
+// pages/info/info.js
 Page({
 
     /**
      * 页面的初始数据
      */
     data: {
-        info: 'hello world',
-        imgSrc: 'https://picsum.photos/200',
-        randomNum: Math.random() * 10,
-        randomNum2: Math.random().toFixed(2),
-        count: 0,
-        msg: 'hello',
-        type: 1,
-        flag: true,
-        arr1: [1, 2, 3, 4, 5],
-        userList: [{
-            id: 1,
-            name: 'redone'
-        }, {
-            id: 2,
-            name: 'greenone'
-        }, {
-            id: 3,
-            name: 'lgbtqa2+one'
-        }]
+        query:{
+
+        }
     },
 
-    btnTapHandler(e) {
-        console.log(e);
-    },
-
-    countChange() {
-        this.setData({
-            count: ++this.data.count
+    goToMessage(){
+        wx.switchTab({
+            url: '/pages/message/message'
         })
     },
 
-    btnTap2(e) {
-        this.setData({
-            count: this.data.count + e.target.dataset.info
-        })
-    },
-
-    inputHandler(e) {
-        this.setData({
-            msg: e.detail.value
-        })
+    goBack(){
+        wx.navigateBack()
     },
 
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        this.setData({
+            query: options
+        })
     },
 
     /**

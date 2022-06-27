@@ -1,0 +1,6 @@
+<!--pages/info/info.wxml-->
+<navigator open-type="navigateBack" delta="2">back</navigator>
+
+<button bindtap="goToMessage">redirect message</button>
+
+<button bindtap="goBack">redirect back</button>

@@ -8,11 +8,17 @@ Page({
 
     },
 
+    goToInfo() {
+        wx.navigateTo({
+            url: '/pages/info/info?name=ls&gender=male',
+        })
+    },
+
     /**
      * 生命周期函数--监听页面加载
      */
     onLoad(options) {
-
+        
     },
 
     /**
