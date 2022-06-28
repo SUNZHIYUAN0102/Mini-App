@@ -4,5 +4,17 @@
 <navigator url="/pages/info/info?name=zs&age=20" open-type="navigate">redirect to info</navigator>
 <button bindtap="goToInfo">redirect info</button>
 
+<text>{{m1.toUpper(name)}}</text>
+
+<text>{{m2.toLower(gender)}}</text>
+
 <view style="height: 800px;">
 </view>
+
+<wxs module="m1">
+    module.exports.toUpper = function (str) {
+        return str.toUpperCase();
+    }
+</wxs>
+
+<wxs module="m2" src="../../utils/tools.wxs"></wxs>

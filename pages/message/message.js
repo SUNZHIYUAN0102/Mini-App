@@ -5,7 +5,9 @@ Page({
      * 页面的初始数据
      */
     data: {
-        count: 0
+        count: 0,
+        name: 'yuanyuan',
+        gender: 'FEMALE'
     },
 
     goToInfo() {
@@ -46,7 +48,6 @@ Page({
      * 生命周期函数--监听页面卸载
      */
     onUnload() {
-
     },
 
     /**

@@ -7,4 +7,6 @@
     text-align: center;
     text-shadow: 0rpx 0rpx 5rpx #fff;
     box-shadow: 1rpx 1rpx 6rpx #aaa;
+    color: white;
 }
+
