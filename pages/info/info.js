@@ -7,7 +7,9 @@ Page({
     data: {
         query:{
 
-        }
+        },
+
+        num: 0
     },
 
     goToMessage(){
@@ -18,6 +20,17 @@ Page({
 
     goBack(){
         wx.navigateBack()
+    },
+
+    syncCount(e){
+        this.setData({
+            num: e.detail.value
+        })
+    },
+
+    getChild(){
+        const child = this.selectComponent('.customA')
+        child.addNum()
     },
 
     /**
@@ -33,14 +46,12 @@ Page({
      * 生命周期函数--监听页面初次渲染完成
      */
     onReady() {
-
     },
 
     /**
      * 生命周期函数--监听页面显示
      */
     onShow() {
-
     },
 
     /**

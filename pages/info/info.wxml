@@ -4,3 +4,10 @@
 <button bindtap="goToMessage">redirect message</button>
 
 <button bindtap="goBack">redirect back</button>
+
+<test-view max="10" num="{{num}}" bind:sync="syncCount" class="customA">
+    <view slot="before">this is a slot</view>
+    <view slot="after">hello</view>
+</test-view>
+
+<button bindtap="getChild">get child component</button>

@@ -1,0 +1,13 @@
+/* components/test.wxss */
+.g-red-text{
+    color: pink ;
+    font-weight: bold;
+}
+
+.colorBox{
+    height: 150rpx;
+    color: white;
+    text-shadow: 0rpx 0rpx 2rpx black;
+    line-height: 150rpx;
+    text-align: center;
+}

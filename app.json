@@ -36,6 +36,9 @@
             }
         ]
     },
+    "usingComponents": {
+        "test-view": "/components/test1/test"
+    },
     "style": "v2",
     "sitemapLocation": "sitemap.json"
 }

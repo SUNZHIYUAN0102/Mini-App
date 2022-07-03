@@ -1,0 +1,23 @@
+<!--components/test.wxml-->
+<text class="g-red-text">{{count}}</text>
+<button bindtap="addCount">+1</button>
+
+<text>{{max}}</text>
+
+<button bindtap="showInfo">show info</button>
+
+<view>{{n1}}+{{n2}}={{sum}}</view>
+<button size="mini" bindtap="addN1">n1++</button>
+<button size="mini" bindtap="addN2">n2++</button>
+
+
+<view class="colorBox" style="background-color: rgb({{fullColor}});">颜色值: {{fullColor}}</view>
+<button style="background-color: red;" size="mini" bindtap="changeR">R</button>
+<button style="background-color: green;" size="mini" bindtap="changeG">G</button>
+<button style="background-color: blue;" size="mini" bindtap="changeB">B</button>
+<slot name="before"></slot>
+<slot name="after"></slot>
+
+<view>{{num}}</view>
+<button bindtap="addNum">Click</button>
+<text>{{username}}</text>
